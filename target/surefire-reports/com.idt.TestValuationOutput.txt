@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.idt.TestValuationOutput
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 67.401 s <<< FAILURE! - in com.idt.TestValuationOutput
+testCarValuationOutputs  Time elapsed: 63.465 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .jHDwGZ:nth-of-type(2)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbe982a7-36e0-4e94-8a05-2247dcbba4c4, findElement {using=css selector, value=.jHDwGZ:nth-of-type(2)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:5030, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.2.0, moz:processID: 51268, moz:profile: /var/folders/_7/6_vk46z52nv..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:5030/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbe982a7-36e0-4e94-8a05-2247dcbba4c4
+	at com.idt.TestValuationOutput.lambda$testCarValuationOutputs$0(TestValuationOutput.java:53)
+	at com.idt.TestValuationOutput.lambda$testCarValuationOutputs$1(TestValuationOutput.java:45)
+	at com.idt.TestValuationOutput.lambda$testCarValuationOutputs$2(TestValuationOutput.java:42)
+	at com.idt.TestValuationOutput.testCarValuationOutputs(TestValuationOutput.java:41)
+
