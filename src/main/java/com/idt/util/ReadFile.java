@@ -1,9 +1,7 @@
 package com.idt.util;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +29,6 @@ public class ReadFile {
 
     public String readFile(String filePath, List<String>fileNames) {
         String outputValue = readFileMap(filePath,  fileNames).get(fileNames.get(0));
-        System.out.println(outputValue);
         return outputValue;
     }
 
@@ -52,7 +49,6 @@ public class ReadFile {
                 outputAsMap.put(matcher1.group(), matcher.group().toString().replace(", ", ""));
             }
         }
-        System.out.println(outputAsMap);
         return outputAsMap;
     }
 
@@ -65,7 +61,6 @@ public class ReadFile {
         while (matcher.find()) {
             regNoList.add(matcher.group().replace(" ", ""));
         }
-        System.out.println(regNoList);
         return regNoList;
     }
 }

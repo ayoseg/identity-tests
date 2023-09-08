@@ -39,10 +39,6 @@ public class ValueMyCarPage {
         driver.findElement(getStartedButton).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait.until(ExpectedConditions.visibilityOfElementLocated(errorAlert));
-        int e = driver.findElements(errorAlert).size();
-        if (e > 0) {
-            System.err.println(driver.findElement(errorAlert).getText());
-        }
         return driver.findElement(errorAlert).getText();
     }
 
